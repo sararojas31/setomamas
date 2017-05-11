@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<head>
+<!-- Vínculo hoja de estilos-->
+<link rel="stylesheet" type="text/css" href="styles/styles.css">
+<!-- Favicon -->
+<link rel="shortcut icon" href="favicon.png">
+<!-- Declaración Responsive -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Caracteres permitidos -->
+<meta charset="utf-8">
+<html>
+<!-- HEAD -->
+
+	<title> Se toma más || Inicio </title>
+</head>
+
+<!-- BODY -->
+<body onLoad="show_clock()">
+
+<!-- HEADER -->
+<header>
+
+<!-- MENU HAMBURGUESA -->
+		<section class="menu_bar">
+			<a  class="bt-menu"><span class="icon-menuh"></span></a>
+		</section>
+<!-- MENU HAMBURGUESA -->
+
+<!--LOGO-->
+<a href="index.html"><img src="images/logo.png" id="logo"></a>
+<!--LOGO-->
+
+<!-- RELOJ --> 
+<section id="fecha">
+	<script id="reloj" language="javascript" src="js/liveclock.js"></script>
+</section>
+<!-- RELOJ --> 
+
+<!-- REDES -->
+<a class="redes" href="https://www.facebook.com/"> <span class="icon-facebook"></span></a>
+<a class="redes" href="https://www.instagram.com/"> <span class="icon-instagram"></span></a>
+<a class="redes" href="https://www.twitter.com/"> <span class="icon-twitter"></span></a>
+<a class="redes" href="https://www.youtube.com/"> <span class="icon-youtube"></span></a>
+<!-- REDES -->
+
+<!-- BUSCADOR -->
+	<section id="buscador">
+	<form action="">
+        <input type="search" name="name" placeholder="Buscar">
+    </form>
+    </section>
+<!-- BUSCADOR -->
+</header>
+<!-- HEADER -->	
+
+<nav>
+	<ul>
+	<!-- Las etiquetas SPAN corresponden con las íconos tipo fuente
+	que se colocan al lado del menú -->
+		<li>  <a class="menu" href="index.html"> <span class="icon-home"></span> Inicio </a></li>
+		<li> <a class="menu" href="pages/editorial.html"><span class="icon-editorial"></span>Editorial </a></li>
+		<li> <a class="menu" href="pages/preparacion.html"><span class="icon-prep"></span>Preparación </a></li>
+		<li> <a class="menu" href="pages/tips.html"><span class="icon-tips"></span>Tips </a></li>
+		<li> <a class="menu" href="pages/tour.html"><span class="icon-tour"></span>Tour </a></li>
+		<li> <a class="menu" href="pages/contactenos.html"><span class="icon-contact"></span>Contáctenos </a></li>
+	</ul>
+</nav>
+
+<section>
+	<section id="editorial-inicio">
+		<a class="a-inicio" href="pages/editorial.html">
+			<img id="img0" src="images/editorial.png">
+				<h3 id="titular-editorial">EDITORIAL</h3> 
+					<p id="inicio-parrafo-editorial"> Una pequeña reseña acerca de la cerveza por parte de nuestro editor. Apología a la cerveza, otra mirada.
+					</p>
+		</a>
+	</section>
+
+	<section id="inicio-tips">
+		<a class="a-inicio" href="pages/tips.html">
+				<img id="img1"src="images/nevera.png"> 
+					<h3 id="titular-tips">TIPS</h3> 
+						<p id="inicio-parrafo-tip">Descubre la mejor manera para disfrutar de tu cerveza.
+						</p>
+		</a>
+	</section>
+	<section id="inicio-contacto">
+		<a class="a-inicio" href="pages/contactenos.html">
+			<img id="img2" src="images/telefono.png"> 
+				<h3 id="titular-contacto">CONTÁCTENOS</h3> 
+					<p id="inicio-parrafo-contacto">Desea que reseñemos su lugar favorito o su negocio, escríbanos.
+					</p>
+		</a>
+	</section>
+</section>
+<aside id="iaside">
+		<a href="https://www.udem.edu.co" target="_blank"><img id="banner1" src="images/bannerudem.png"></a>
+		<a href="http://www.udem.edu.co/index.php/comunicacion" target="_blank"><img id="banner2" src="images/bannerfac.png"></a>
+</aside>
+	<section id="inicio-prep">
+		<a class="a-inicio" href="pages/preparacion.html">
+			<video id="img3" controls="controls" width="408" height="229">
+			<source src="videos/video.mp4" type="video/mp4"/>
+			<source src="pages/video.ogg" type="video/ogg"/>
+			<source src="pages/video.webm" type="video/webm"/> Tu navegador no soporta HTML5</video>
+				<h3 id="titular-prep">PREPARACIÓN</h3> 
+					<p id="inicio-parrafo-prep">Referentes de producción en la ciudad. Cervezas artesanales en Colombia.
+					</p>
+		</a>
+	</section>
+	<section id="inicio-tour">
+		<a class="a-inicio" href="pages/tour.html">
+			<img id="img4" src="images/tour.png">
+				<h3 id="titular-tour">TOUR</h3> 
+				<p id="inicio-parrafo-tour">Locaciones claves para el consumo de cerveza. Lugares donde podrás disfrutar de la oferta nacional, internacional y artesanal.
+				</p>
+		</a>
+	</section>
+</section>
+
+<footer>
+<section id="pie">
+<a href="index.html"><img id="logo-footer" src="images/logof.png"></a>
+	<ul>
+		<a id="iniciopata" class="pata" href="index.html"><li>Inicio</li></a>
+		<a class="pata" href="pages/editorial.html"><li>Editorial</li></a>
+		<a class="pata" href="pages/preparacion.html"><li>Preparación</li></a>
+		<a class="pata" href="pages/tips.html"><li>Tips</li></a>
+		<a class="pata" href="pages/tour.html"><li>Tour</li></a>
+		<a class="pata" href="pages/contactenos.html"><li>Contáctenos</li></a>
+	</ul>
+	<h4>:-: Carrera 86C #48BB - 67 :-: 422.96.11 - 311.689.88.28 :-: contacto@setomamas.com :-: Todos los derechos reservados :-:</h4>
+</section>
+</footer>
+
+<!-- Declaración JS Menu Hamburguesa-->
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="js/main.js"></script>
+<!-- Declaración JS Menu Hamburguesa-->
+
+</body>
+<!-- BODY -->
+
+</html>

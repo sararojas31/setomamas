@@ -1,0 +1,729 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+html{
+	background: #fff;
+}
+
+body{
+	margin: 0px auto;
+	background: #F2EEA7;}
+
+/* FONTS ICOMOON Se tuvo que ajustar la ruta relativa respecto
+al lugar en que se encuentran las fonts*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?bce2bg');
+  src:  url('../fonts/icomoon.eot?bce2bg#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?bce2bg') format('truetype'),
+    url('../fonts/icomoon.woff?bce2bg') format('woff'),
+    url('../fonts/icomoon.svg?bce2bg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+  content: "\e900";
+  margin: 2%;
+}
+.icon-editorial:before {
+  content: "\e926";
+  margin: 2%;
+}
+.icon-prep:before {
+  content: "\e9aa";
+  margin: 2%;
+}
+.icon-menuh:before {
+  content: "\e9bd";
+  float: left;
+  font-size: 1em;
+}
+.icon-tour:before {
+  content: "\e9ca";
+  margin: 2%;
+}
+.icon-contact:before {
+  content: "\ea86";
+  margin: 2%;
+}
+.icon-facebook:before {
+  content: "\ea90";
+  margin-left: 71%;
+  margin-top: -70px;
+  float: left;
+}
+.icon-instagram:before {
+  content: "\ea92";
+  margin-left: 76%;
+  margin-top: -70px;
+  float: left;
+}
+.icon-twitter:before {
+  content: "\ea96";
+  margin-left: 81%;
+  margin-top: -70px;
+  float: left;
+}
+.icon-youtube:before {
+  content: "\ea9d";
+  margin-left: 87%;
+  margin-top: -70px;
+  float: left;
+}
+.icon-tips:before {
+  content: "\ead7";
+  margin: 2%;
+}
+/* FONTS ICOMOON¨*/
+
+/* FUENTES */
+@font-face {
+    font-family: "Oswald";
+    src: url(../fonts/oswald-regular.ttf);
+    font-weight: sans-serif;}
+ 
+@font-face {
+    font-family: "Pathway Gothic One";
+    src: url(../fonts/pathwaygothicone-regular.ttf);
+    font-weight: sans-serif;}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/roboto-regular.ttf);
+    font-weight: sans-serif;}
+/* FUENTES */
+
+
+/* RELOJ-FECHA */
+#fecha{
+	margin-left: 71%;
+	margin-top: -200px;
+}
+/* RELOJ-FECHA */
+
+/* MOUSE OVER - MISCELANEAS */
+.pata:hover{
+	color: #fff;
+}
+.menu:hover{
+	background: #37040C;
+}
+.a-inicio{ /*enlaces en inicio */
+	text-decoration: none;
+}
+#titular-editorial:hover{
+	color: #fff
+}
+#inicio-parrafo-editorial:hover{
+	color:#fff;
+}
+#titular-tips:hover{
+	color: #fff
+}
+#inicio-parrafo-tip:hover{
+	color:#fff;
+}
+#titular-contacto:hover{
+	color: #fff
+}
+#inicio-parrafo-contacto:hover{
+	color:#fff;
+}
+#titular-prep:hover{
+	color: #fff
+}
+#inicio-parrafo-prep:hover{
+	color:#fff;
+}
+#titular-tour:hover{
+	color: #fff
+}
+#inicio-parrafo-tour:hover{
+	color:#fff;
+}
+#img0:hover{
+	border:dotted 1px;
+}
+#img1:hover{
+	border:dotted 1px;
+}
+#img3:hover{
+	border:dotted 1px;
+}
+#img4:hover{
+	border:dotted 1px;
+}
+img{
+	float:left;
+}
+
+#banner1:hover{
+	border: dotted 1px;
+}
+#banner2:hover{
+	border: dotted 1px;
+}
+
+/* MOUSE OVER*/
+
+
+
+/* ESCRITORIO */
+@media only screen and (min-width: 769px)
+{
+
+	body {
+	width: 76%;
+	max-width: 1250px;
+	min-width: 850px;
+	height: 1500px;}
+
+	header{
+	width: 100%;
+	height: 300px;
+	background: url(../images/fondo-header.png);}
+
+/* LOGO */
+	#logo{
+	float: left;
+	margin: 50px 0px 0px 70px;}
+/* LOGO */
+
+/* NAV */
+
+ul{
+	list-style-type: none;
+	background: #532413;
+}
+li{
+	float: left;
+	width: 16.6%;
+}
+.menu{
+	display: block;
+	text-decoration: none;
+	height: 50px;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.25em;
+	padding-top: 14px;
+	margin: 2% 0% 2% 1.7%;
+	text-align: center;
+	background: #532413;
+	color: #F2EEA7;
+}
+/* NAV */
+
+/* RELOJ */
+#reloj{
+	float: left;
+}
+/* RELOJ*/
+
+/* BUSCADOR */
+#buscador{
+	float: left;
+	margin-left: 70%;
+	margin-top: -30px;
+}
+
+input[type="search"]{
+    width: 38%; /*ancho por defecto*/
+    background: #ededed url('../images/buscar.png') no-repeat 9px center; /*icono lupa*/
+    padding: 9px 10px 9px 32px;
+    border-radius: 15em;
+    -webkit-transition: all .5s; /* transición de .5seg a todos los elementos para chrome*/
+    -moz-transition: all .5s; /* transición de .5seg a todos los elementos para mozilla*/
+    -o-transition: all .5s; /* transición de .5seg a todos los elementos para ophera*/
+    transition: all .5s; /* transición de .5seg a todos los elementos*/
+    outline: none; /* ocultar el fucos automático de los input */
+}
+input[type="search"]:focus{
+    width: 38%; /*tamaño del boton buscar al hacer click*/
+    padding-left: 32px; /*espacio entre el icono lupa y el placeholder*/
+    color: #000;
+    background-color: #FFF;
+}
+/* BUSCADOR */
+
+/**MENU HAMBURGUESA**/
+.menu_bar{
+	display:none;
+	margin-top: -300px;
+	background:#37040C;
+}
+/**MENU HAMBURGUESA**/
+
+/* REDES */
+.redes {
+	text-decoration: none;
+	font-size: 1.5em;
+	color: #F2EEA7;
+}
+/* REDES */
+
+
+
+/* NAV DE LA PATA*/
+#pie{
+	background: #37040C;
+	width: 100%;
+	height: 90px;
+	float: left;
+}
+
+#logo-footer{
+	margin-top: 20px;
+	margin-left: 4%;
+	float: left;
+}
+
+.pata{
+	display: block;
+	text-decoration: none;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1em;
+	text-align: center;
+	color: #F2EEA7;
+	margin: 20px 0px 0px 90px;
+	float: left;
+}
+
+#iniciopata{
+	margin-left: 7%;
+}
+section{
+	width: 58.6%;
+	float: left;
+}
+h4{
+	color: #F2EEA7;
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.75em;
+	margin: 10px 0px 0px 120px;
+	float: left;
+}
+
+/* SECCIÓN EDITORIAL-INICIO*/
+#editorial-inicio{
+	width: 82%;
+	height: 310px;
+	margin: 15px 0px 10px;
+	margin-left: 3%;
+	float: left;
+	background: rgb(55,4,12);
+	text-align: justify;
+	padding: 6%;
+}
+
+#titular-editorial{
+	color: #F2EEA7;
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: 1em;
+	width: 100%;
+	height: 60px;
+	background: rgba(55,4,12,0.9);
+	padding: 2%;
+	margin-top: -50px;
+	float: left;
+}
+
+#inicio-parrafo-editorial{
+	color: #F2EEA7;
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: 0.87em;
+	width: 75%;
+	height: 60px;
+	float: left;
+	margin:-70px 0px 0px 120px;
+}
+
+/* SECCIÓN TIPS-INICIO */
+
+#inicio-tips{
+	width: 42%;
+	height: 330px;
+	margin-left: 5%;
+	margin-right: 3%;
+	float: left;
+	background: rgba(83,36,19,0.1);
+	text-align: justify;
+}
+#img1{
+	margin-top:15px;
+	margin-left: 7.5%;
+}
+#titular-tips{
+	color: #37040C;
+	font-family: 'Pathway Gothic One', sans-serif;
+	padding: 4%;
+	margin-top: -70px; 
+	margin-left: 7.5%;
+	float: left;
+	background-color: rgba(242,238,167,0.7);
+	width: 75.5%;
+	height: 50px;
+}
+#inicio-parrafo-tip{
+	color: #37040C;
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: 0.87em;
+	float: left;
+	margin-top:-65px;
+	margin-left: 35%;
+	font-size: 1em;
+	width: 50%;
+	height: 50px;
+}
+
+/* SECCIÓN CONTACTO-INICIO */
+
+#inicio-contacto{
+	width: 42%;
+	height: 330px;
+	margin-right: 2%;
+	margin-bottom: 2%;
+	margin-left: 3%;
+	float: left;
+	background: rgba(83,36,19,0.1);
+	text-align: justify;
+}
+#img2{
+	margin-top: 30px;
+	margin-left: 15%;
+}
+#titular-contacto{
+	color: #37040C;
+	font-family: 'Pathway Gothic One', sans-serif;
+	padding: 2%;
+	margin-top: 50px;
+	margin-left: 4%;
+	float: left;
+	background-color: rgba(242,238,167,0.7);
+	width: 87%;
+	height: 50px;
+}
+#inicio-parrafo-contacto{
+	color: #37040C;
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-size:0.87em;
+	float: left;
+	margin-top:-60px;
+	margin-left: 45%;
+	font-size: 1em;
+	width: 45%;
+	height: 50px;
+}
+
+/* SECCIÓN PREPARACIÓN-INICIO */
+
+#inicio-prep{
+	width: 44%;
+	height: 300px;
+	margin-bottom: 10px;
+	margin-left: 3%;
+	float: left;
+	background: rgba(83,36,19,0.1);
+	color: #37040C;
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: 1em;
+	text-align: justify;
+}
+#img3{
+	margin-top: 10px;
+	margin-left:4.5%;
+}
+#titular-prep{
+	color: #37040C;
+	font-family: 'Pathway Gothic One', sans-serif;
+	padding:2%;
+	margin-left: 4%;
+	float: left;
+	background-color: rgba(242,238,167,0.7);
+	width: 87%;
+	height: 30px;
+}
+#inicio-parrafo-prep{
+	color: #37040C;
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: 0.87em;
+	float: left;
+	margin-top:-10%;
+	margin-left: 35%;
+	font-size: 1em;
+	width: 55%;
+	height: 50px;
+}
+
+/* SECCIÓN TOUR-INICIO */
+#inicio-tour{
+	width: 44%;
+	height: 300px;
+	margin-bottom: 10px;
+	margin-left: 4%;
+	float: left;
+	background: rgba(83,36,19,0.1);
+	color: #37040C;
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: 1em;
+	text-align: justify;
+}
+#img4{
+	margin-top: 10px;
+	margin-left: 4%;
+}
+#titular-tour{
+	color: #37040C;
+	font-family: 'Pathway Gothic One', sans-serif;
+	padding:2%;
+	margin-top: -30px;
+	margin-left: 4.2%;
+	float: left;
+	background-color: rgb(242,238,167);
+	width: 86%;
+	height: 30px;
+}
+#inicio-parrafo-tour{
+	color: #37040C;
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: 0.87em;
+	float: left;
+	margin-top:-10%;
+	margin-left: 20%;
+	font-size: 1em;
+	width: 72%;
+	height: 50px;
+}
+
+/*BANNERS*/
+aside
+{
+	float: left;
+	width: 35%;
+	height: 660px;
+	margin-top: 35px;
+	margin-bottom:10px;
+	margin-left: 1%;
+}
+#banner1{
+	float:left;
+	margin-left: 2%;
+
+}
+#banner2{
+	float: left;
+	margin-top: 6%;
+	margin-left: 2%;
+}
+
+/* ELEMENTOS OCULTOS 
+#logo-tablet{
+	display: none;
+}
+#logo-cel{
+	display: none;
+}
+#header-tableta{
+	display:none;
+}
+#editorial-tableta{
+	display: none;
+}
+*/
+
+}
+
+/* TABLETA */
+@media only screen and (min-width: 481px) and (max-width: 768px)
+{
+	body {
+	width: 100%;
+	max-width: 768px;
+	min-width: 575px;
+	height: 1500px;}
+
+/* MENU HAMBURGUESA */
+
+.menu_bar {
+		display:block;
+		width:100%;
+		position: fixed;
+		top:0;
+		font-family: arial;
+		background:#F2EEA7;
+	}
+ 
+	.bt-menu {
+		display: block;
+		margin: 0;
+		padding: 20px;
+		background:#37040C;
+		color: #fff;
+		overflow: hidden;
+		font-size: 1.2em;
+		font-weight: bold;
+		text-decoration: none;
+	}
+ 
+	span {
+		margin-right: 3px;
+		font-size: 1.2em;
+	}
+ 
+	nav {
+		width: 40%;
+		height: calc(100% - 80px);
+		position: fixed;
+		right:100%;
+		background: #37040C;
+		height: 300px;
+		font-family: arial;
+		font-size: 1.2em;
+		margin-top: 18%;
+	}
+ 
+	li {
+		display: block;
+		height: 30px;
+		margin-top: 15px;
+		margin-left: 10px;
+		padding-left: 15px;
+		}
+ 
+	a {
+		display: block;
+		text-decoration: none;
+		color: #fff;
+	}
+	/* MENU HAMBURGUESA */
+
+/* LOGO 
+	#logo-tablet{
+	float: left;
+	margin: 20px 0px 0px 70px;}
+/* LOGO 
+
+/* RELOJ
+#reloj{
+	float: left;
+}
+/* RELOJ
+
+/* BUSCADOR 
+#buscador{
+	float: left;
+	margin-left: 70%;
+	margin-top: -30px;
+}
+
+input[type="search"]{
+    width: 38%; /*ancho por defecto*/
+    background: #ededed url('../images/buscar.png') no-repeat 9px center; /*icono lupa*/
+    padding: 9px 10px 9px 32px;
+    border-radius: 15em;
+    -webkit-transition: all .5s; /* transición de .5seg a todos los elementos para chrome*/
+    -moz-transition: all .5s; /* transición de .5seg a todos los elementos para mozilla*/
+    -o-transition: all .5s; /* transición de .5seg a todos los elementos para ophera*/
+    transition: all .5s; /* transición de .5seg a todos los elementos*/
+    outline: none; /* ocultar el fucos automático de los input */
+}
+input[type="search"]:focus{
+    width: 38%; /*tamaño del boton buscar al hacer click*/
+    padding-left: 32px; /*espacio entre el icono lupa y el placeholder*/
+    color: #000;
+    background-color: #FFF;
+}
+/* BUSCADOR 
+
+/* REDES 
+.redes {
+	text-decoration: none;
+	font-size: 1.5em;
+	color: #F2EEA7;
+}
+REDES */
+
+}
+/* CELULAR */
+@media only screen and (max-width: 480px)
+{
+body {
+	width: 100%;
+	height: 1500px;
+	margin:auto;}
+
+
+/* MENU HAMBURGUESA */
+
+.menu_bar {
+		display:block;
+		width:100%;
+		position: fixed;
+		top:0;
+		font-family: arial;
+		background:#F2EEA7;
+	}
+ 
+	.bt-menu {
+		display: block;
+		margin: 0;
+		padding: 20px;
+		background:#37040C;
+		color: #fff;
+		overflow: hidden;
+		font-size: 1.2em;
+		font-weight: bold;
+		text-decoration: none;
+	}
+ 
+	span {
+		float: left;
+		margin-right: 3px;
+		font-size: 1.2em;
+	}
+ 
+	nav {
+		width: 40%;
+		height: calc(100% - 80px);
+		position: fixed;
+		right:100%;
+		background: #37040C;
+		height: 300px;
+		font-family: arial;
+		font-size: 1.2em;
+	}
+ 
+	li {
+		display: block;
+		height: 30px;
+		margin-top: 15px;
+		margin-left: 10px;
+		padding-left: 15px;
+		}
+ 
+	a {
+		display: block;
+		text-decoration: none;
+		color: #fff;
+	}
+	/* MENU HAMBURGUESA */
+}
+
+
